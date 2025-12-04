@@ -9,7 +9,9 @@ export const createPacienteTable = async (db) => {
             tx.executeSql(
                     `CREATE TABLE IF NOT EXISTS Paciente (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    nome TEXT NOT NUL
+                    nome TEXT NOT NULL, 
+                    telefone TEXT,
+                    idade INTEGER
                 );`
             );
         });
